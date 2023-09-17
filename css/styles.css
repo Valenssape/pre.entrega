@@ -22,10 +22,14 @@ body{
         text-align: end;
 }
 .nav li{
-    display: flex;inline-size: auto;
+display: flex;
+flex: initial;
     margin-right: 10px;
-    text-decoration: none;
-
+    text-decoration: none
+}
+.container{
+display: flex;
+flex-direction: initial;
 }
 a{
     text-decoration: none;
@@ -87,6 +91,14 @@ h2{
     padding: 30px;
     margin-top: 10rem;
 }
+.reverse {
+    flex-direction: row-reverse;
+}
+
+.reverse .contenedor-textos {
+    text-align: right;
+}
+
 .contenedor-padre {
     display: flex;
     flex-direction: column;
@@ -169,7 +181,7 @@ hr{
     font-family: "Helvetica";
     font-weight: 500;
     font-size: 30px;
-    text-align: end;
+    text-align: start;
 }
 .navegacion li{
     display: flex;inline-size: auto;
